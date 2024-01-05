@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: rgb(221, 100, 100);
+            font: normal 18pt Arial;
+        }
+
+        input {
+            text-align: center;
+            font: normal 18pt Arial;
+            width: 200px;
+        }
+
+        div#res {
+            margin-top: 20px;
+            width: 800px;
+        }
+
+        #button {
+            border-radius: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="corpo">
+        <h1>Verificador de Nacionalidade</h1>
+        País onde mora: <input type="text" name="txpais" id="txpais">
+        <input type="button" value="consultar" id="button" onclick="consultar()">
+        <div id="res">Resultado:</div>
+    </div>
+
+    <script>
+        function consultar() {
+            var pais = window.document.getElementById('txpais')
+            var res = window.document.getElementById('res')
+            var nat = (pais.value)
+            if (nat == 'Brasil') {
+                res.innerHTML = `Resultado: Morando no <strong>${nat}</strong>, você é um <strong>Brasileiro!!</strong>`
+            } else {
+                res.innerHTML = `Resultado: Morando em <Strong>${nat}</Strong>, você é um <strong>Estrangeiro!!</strong>`
+            }
+        }
+        
+    </script>
+</body>
+</html>

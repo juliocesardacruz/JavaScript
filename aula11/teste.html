@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            
+            color:rgb(85, 10, 154);
+            width: 680px;
+            text-align: center;
+        }
+
+        input {
+            text-align: center;
+            font: normal 18pt Arial;
+            width: 200px;
+        }
+
+        div#res {
+            margin-top: 20px;
+            width: 800px;
+        }
+
+        #button {
+            border-radius: 5px;
+            border-width: 3px;
+            width: 150px;
+            align-items: normal;
+            
+        }
+        #txpais {
+            border-radius: 5px;
+            border-width: 3px;
+            background-color: rgba(152, 231, 203, 0.326);
+            width: 300px;
+            text-align: center;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+            <h1>Verificador de Nacionalidade</h1>
+            <strong>País onde mora:</strong> <input type="text" name="txpais" id="txpais">
+            <input type="button" value="consultar" id="button" onclick="consultar()">
+            <div id="res">Resultado:</div>
+
+    <script>
+        function consultar() {
+            var seupaís = window.document.getElementById('txpais')
+            var res = window.document.getElementById('res')
+            var nation = (seupaís.value)
+            if (nation == 'Brasil') {
+                res.innerHTML = `Resultado: Morando no <strong>${nation}</strong>, você é um <strong>Brasileiro!!</strong>`
+            } else {
+                res.innerHTML = `Resultado: Morando em <Strong>${nation}</Strong>, você é um <strong>Estrangeiro!!</strong>`
+            }
+        }
+        
+    </script>
+</body>
+</html>
