@@ -17,6 +17,22 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
+#txtano {
+    border-radius: 5px;
+}
+
+#button {
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pbutton {
+    display: flex;
+    
+}
+
 footer {
     color: white;
     text-align: center;
