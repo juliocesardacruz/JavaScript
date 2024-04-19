@@ -1,11 +1,10 @@
 function calcular() {
-    var ntab = document.getElementById ('tab')
-    /*var ntab = 6*/
+    var ntab = Number (document.getElementById ('tab').value)
+    /*var ntab = 7*/
     var cont = 1
-    /*var result = document.getElementById('res')*/
+    var result = document.getElementById('res')
     while (cont <= 10) {
         var res1 = Number(ntab) * cont
-        var result = document.getElementById('res')
         result.innerHTML = (`${ntab} X ${cont} = ${res1}`)
         cont++
     }
