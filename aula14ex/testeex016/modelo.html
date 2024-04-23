@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <label for="ini">Inicio: </label>
+            <input type="number" name="Inicio" id="ini">
+        </div>
+        <div>    
+            <label for="fim">Fim: </label>
+            <input type="number" name="fim" id="fim">
+        </div>
+        <div>
+            <label for="pas">Passo: </label>
+            <input type="number" name="passo" id="pas">
+        </div>
+        <div>
+            <input type="button" value="contar" id="button" onclick="verificar()">
+        </div>
+        <div id="res">
+            Impossível contar!!!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

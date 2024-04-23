@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -11,23 +11,14 @@
         <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
-            <label for="ini">Inicio: </label>
-            <input type="number" name="Inicio" id="ini">
-        </div>
-        <div>    
-            <label for="fim">Fim: </label>
-            <input type="number" name="fim" id="fim">
-        </div>
-        <div>
-            <label for="pas">Passo: </label>
-            <input type="number" name="passo" id="pas">
-        </div>
-        <div>
-            <input type="button" value="contar" id="button" onclick="verificar()">
+        <div id="dados">
+           <p>Inicio: <input type="number" name="Inicio" id="txti"></p>
+           <p>Fim: <input type="number" name="Fim" id="txtf"></p>
+           <p>Passo: <input type="number" name="Passo" id="txtp"></p>
+           <p><input type="button" value="contar" onclick="contar()"></p>
         </div>
         <div id="res">
-            Impossível contar!!!
+           Preparando a contagem...
         </div>
     </section>
     <footer>
