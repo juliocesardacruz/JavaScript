@@ -1,12 +1,19 @@
 function calcular() {
-    var ntab = Number (document.getElementById ('tab').value)
-    /*var ntab = 7*/
-    var cont = 1
+    var ntab = document.getElementById ('tab')
     var result = document.getElementById('res')
-    while (cont <= 10) {
-        var res1 = Number(ntab) * cont
-        result.innerHTML = (`${ntab} X ${cont} = ${res1}`)
-        cont++
+    if (ntab.value.length == 0) {
+        result.innerHTML = 'Informar um número de tabuada!!'
+        window.alert('[ERRO] Digite um número de tabuada!!')
+    } else {
+        result.innerHTML = ''
+        var n1 = Number(ntab.value)
+        var c = 1
+        for ( c = 1; c <= 10; c++) {
+            var item = document.createElement('option')
+            item.text = `${n1} X ${c} = ${n1*c}`
+            item.value = `tab${c}`
+            result.appendChild(item)
+        }
     }
 
 }
