@@ -14,6 +14,6 @@ for (let pos = 0; pos < valores.length; pos++) {
     console.log (`A posição ${pos} tem o valor ${valores[pos]}`)
  }*/
 
- for (let pos in valores) {
+ for (let pos in valores) {// Se Lê: PARA(for) CADA POSIÇÃO(pos) EM OU DENTRO(in)  DE VALORES(valores que é uma variável composta)
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
  }
